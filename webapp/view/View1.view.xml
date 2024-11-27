@@ -1,0 +1,28 @@
+<mvc:View controllerName="nm.flightsegw9267.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+            <Toolbar id="t">
+            <SearchField id="sf" width="50%" search=".onSearchFieldSearch" liveChange="onSearchFieldSearch"></SearchField>
+            <Button id="btn" text="Sort" press=".onSortPress" />
+        </Toolbar>
+
+        <List id="idToolsList" items="{dc>/d/results}" selectionChange="onToolsListSelectionChange" mode="SingleSelectMaster">
+            <items>
+
+            <ObjectListItem id="oli"
+            icon="sap-icon://flight"
+            intro="{dc>Connid}"
+            number="{dc>Connid}"
+            numberTextDirection="Inherit"
+            title="{dc>Carrid}"
+            >
+                <attributes>
+                    <ObjectAttribute id="oba" text="{path: 'dc>Fldate', formatter: '.formatDate'}" title="Flight Date" ></ObjectAttribute>
+                </attributes>
+            </ObjectListItem>
+            </items>
+        </List>
+        <Text text="{dc>/results/0/zsbookSet/results}"></Text>
+    </Page>
+</mvc:View>

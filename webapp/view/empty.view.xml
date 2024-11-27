@@ -1,0 +1,12 @@
+<mvc:View xmlns:table="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <Page id="empty" title="Details Page">
+    </Page>
+
+</mvc:View>

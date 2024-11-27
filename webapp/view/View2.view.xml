@@ -1,0 +1,19 @@
+<mvc:View xmlns:table="sap.ui.table"
+	controllerName="nm.flightsegw9267.controller.View2"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <Page id="pg" title="View Page 2" showNavButton="true" navButtonPress="onPageNavButtonPress">
+        <content>
+
+
+			<Text text="{dc>/zsbookSet/results/0/Carrid}"></Text>
+			
+		</content>
+    </Page>
+
+</mvc:View>
